@@ -1,0 +1,1362 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* -------------- Generic ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  /* Remove selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+select {
+  /* Size */
+  width: auto;
+  height: 25px;
+  /* Position */
+  margin: 10px;
+  padding: 5px;
+  /* Style */
+  border: 2px solid rgb(80, 80, 80);
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: rgb(80, 80, 80);
+  /* Remove blue bord */
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+select:focus {
+  /* Style */
+  border: 2px solid rgb(0, 0, 0);
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+input {
+  /* Size */
+  width: 30%;
+  height: 30px;
+  /* Position */
+  margin-top: 10px;
+  padding: 5px;
+  /* Style */
+  border: 2px solid rgb(80, 80, 80);
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: rgb(80, 80, 80);
+  /* Remove blue bord */
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  /* Transition */
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  /* Size */
+  width: 95%;
+  height: 30px;
+  /* Position */
+  /* Style */
+  border: 2px solid rgb(0, 0, 0);
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+button {
+  /* Size */
+  width: 95%;
+  height: 45px;
+  /* Position */
+  margin-top: 10px;
+  padding: 5px;
+  /* Style */
+  border: 2px solid rgb(80, 80, 80);
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: rgb(80, 80, 80);
+  /* Remove blue bord */
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+button:hover {
+  /* Style */
+  border: 2px solid rgb(0, 0, 0);
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+button:focus {
+  /* Style */
+  border: 2px solid rgb(255, 255, 255);
+  background-color: black;
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+
+/* body */
+.bone {
+  /* Size */
+  width: 90%;
+  height: auto;
+  /* Position */
+  margin: 50px auto;
+  /* Flex */
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+body {
+  /* Style */
+  background-color: black;
+  scroll-behavior: smooth;
+}
+
+/* -------------- Label ---------------- */
+a {
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  margin: 20px;
+}
+
+h3 {
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+
+h4 {
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin: 20px;
+}
+
+/* -------------- Header ---------------- */
+header {
+  /* Size */
+  width: 100%;
+  height: 500px;
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Nav Bar */
+.nav-bar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+ul {
+  /* Position */
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  margin-right: 45px;
+  justify-content: start;
+}
+
+li a {
+  /* Position */
+  display: inline;
+  text-decoration: none;
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid rgb(0, 0, 0);
+  /* Remove selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+li a:hover {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+li a.active {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+/* Info */
+.info {
+  /* Size */
+  width: 100%;
+  height: 35px;
+  /* Flex */
+  display: flex;
+  justify-content: flex-end;
+  /* Color */
+  background-color: white;
+  /* Remove selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* Transition */
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.info h3 {
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: rgb(80, 80, 80);
+  /* Position */
+  margin-top: 3px;
+  margin-right: 15%;
+}
+
+.info a {
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  color: rgb(80, 80, 80);
+  /* Position */
+  margin-top: 3px;
+  margin-right: 10%;
+}
+
+.info-header {
+  position: fixed;
+  top: 0px;
+}
+
+/* Logo */
+.logo {
+  /* Size */
+  width: 100%;
+  height: 340px;
+  /* Flex */
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  /* Remove selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.logo h1 {
+  /* Position */
+  margin-top: 100px;
+  /* Transition */
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.logo-img {
+  /* Size */
+  width: 150px;
+  height: 150px;
+  /* Transition */
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+/* Register Area */
+.socialclub-register-area {
+  /* Size */
+margin-top: 50px;
+  width: 100%;
+  height: 400px;  /* Style */
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-attachment: fixed;
+  
+	border-radius: 8px;
+}
+
+.socialclub-register-area img{
+  /* Size */
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  border-radius: 2%;
+  
+  /* Transition */
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+.division {
+  /* Style */
+  background-color: rgba(0, 0, 0, 0.822);
+  /* Size */
+  width: 40%;
+  height: 100%;
+}
+
+.register {
+  /* Size */
+  margin-left: 50px;
+  width: 100%;
+  /* Position */
+}
+
+.bloc {
+  /* Size */
+  width: 100%;
+  /* Position */
+  display: flex;
+  flex-direction: column;
+}
+
+.textfield {
+  /* Size */
+  width: 85%;
+  height: 30px;
+}
+
+/* -------------- Article ---------------- */
+article {
+  /* Size */
+  width: 100%;
+  height: 600px;
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Article body */
+.article-body {
+  /* Size */
+
+  width: 100%;
+  /* Position */
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+/* Article Cont */
+.article-cont {
+  /* Size */
+  width: 100%;
+}
+
+/* Gallery */
+.gallery-bar {
+  /* Size */
+  width: 100%;
+  /* Position */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.gallery {
+  /* Size */
+  width: 300px;
+  height: 450px;
+  /* Position */
+  margin: 5px;
+  float: left;
+  /* Remove selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.gallery img {
+  /* Size */
+  width: 230px;
+  height: 230px;
+  border-radius: 2%;
+}
+
+.desc {
+  /* Position */
+  padding: 7px;
+  text-align: center;
+}
+
+/* Card */
+.card-bar {
+  /* Size */
+  width: auto;
+  /* Position */
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  /* Size */
+  width: 100%;
+  /* Position */
+}
+
+.card img {
+  /* Size */
+  width: 150px;
+  height: 150px;
+  /* Style */
+  border-radius: 100%;
+}
+
+.card {
+  /* Position */
+  text-align: center;
+}
+
+.card div {
+  /* Style */
+  border: 1px solid;
+}
+
+.social-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.desc {
+  /* Style */
+  /*background: rgb(66, 66, 66);*/
+}
+
+.buy {
+  /* Style */
+  background: #ccc;
+  border: 0em;
+  border-color: black;
+  select: none;
+}
+
+.buy h4 {
+  /* Style */
+  color: rgb(0, 0, 0);
+}
+
+.buy:hover {
+  /* Style */
+  background: rgb(255, 255, 255);
+}
+
+/*---------------Footer---------------*/
+.base {
+  /* Flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.foot {
+  /* Flex */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.link {
+  /* Style */
+  text-decoration: none;
+}
+
+footer {
+  /* Size */
+  width: 100%;
+  height: 600px;
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+
+/* Responsividade IPHONE X */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) {
+  .bone {
+    /* Size */
+    width: 800px;
+    height: auto;
+    /* Position */
+    margin:  auto 12%;
+    /* Flex */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  header {
+    /* Size */
+    width: 100%;
+    height: auto;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin: 15px;
+  }
+
+  a {
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
+
+  /* Article body */
+  .article-body {
+    /* Size */
+    width: 100%;
+    /* Position */
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .article-cont {
+    /* Size */
+    width: 100%;
+    /* Position */
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .nav-bar {
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Transition */
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  ul {
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  li a {
+    /* Position */
+    display: inline;
+    text-decoration: none;
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    /* Remove selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  li a:hover {
+    border-bottom: 25px solid rgb(255, 255, 255);
+  }
+
+  li a.active {
+    border-bottom: 25px solid rgb(255, 255, 255);
+  }
+
+  /* Logo */
+  .logo {
+    /* Size */
+    width: 50%;
+    height: auto;
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    flex-direction: center;
+    background-color: black;
+    /* Remove selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .logo-img {
+    /* Size */
+    width: 100px;
+    height: 100px;
+    /* Transition */
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  /* Info */
+  .info {
+    /* Size */
+    width: 100%;
+    height: 75px;
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Color */
+    background-color: white;
+    /* Remove selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* Transition */
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  .info h3 {
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(80, 80, 80);
+    /* Position */
+    margin-top: 3px;
+    margin-left: 20%;
+  }
+
+  .info-header {
+    position: fixed;
+    top: 0px;
+  }
+
+  /* Register Area */
+  .socialclub-register-area {
+    /* Size */
+    width: 95%;
+    height: auto;
+    /* Style */
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    /* Position */
+    display: flex;
+    justify-content: flex-end;
+    /* Transition */
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  .division {
+    /* Style */
+    background-color: rgba(0, 0, 0, 0.822);
+    /* Size */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  /* Gallery */
+  .gallery-bar {
+    /* Size */
+    width: 100%;
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .gallery {
+    /* Size */
+    width: 95%;
+    /* Position */
+    margin-top: 10px;
+    margin-left: 0px;
+    float: left;
+    /* Remove selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  /* Card */
+  .card-bar {
+    /* Size */
+    width: 95%;
+    /* Position */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .card {
+    /* Size */
+    width: 100%;
+    /* Position */
+    margin-top: 20px;
+  }
+
+  .card img {
+    /* Size */
+    width: 100px;
+    height: 100px;
+    /* Style */
+    border-radius: 100%;
+  }
+
+  .base {
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .foot {
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/* Responsividade IPHONE 6, 6S, 7 e 8 */
+
+@media 
+  (max-device-width: 218px)
+  and (max-device-height: 281px) {
+  .bone {
+    /* Size */
+    width: 800px;
+    height: auto;
+    /* Position */
+    margin:  auto 12%;
+    /* Flex */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  header {
+    /* Size */
+    width: 100%;
+    height: auto;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin: 15px;
+  }
+
+  a {
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
+
+  /* Article body */
+  .article-body {
+    /* Size */
+    width: 100%;
+    /* Position */
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .article-cont {
+    /* Size */
+    width: 100%;
+    /* Position */
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .nav-bar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+ul {
+  /* Position */
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  margin-right: 45px;
+  justify-content: start;
+}
+
+li a {
+  /* Position */
+  display: inline;
+  text-decoration: none;
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid rgb(0, 0, 0);
+  /* Remove selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+li a:hover {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+li a.active {
+  border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+  /* Logo */
+  .logo {
+    /* Size */
+    width: 50%;
+    height: auto;
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    flex-direction: center;
+    background-color: black;
+    /* Remove selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .logo-img {
+    /* Size */
+    width: 100px;
+    height: 100px;
+    /* Transition */
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  /* Info */
+  .info {
+    /* Size */
+    width: 100%;
+    height: 75px;
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Color */
+    background-color: white;
+    /* Remove selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* Transition */
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  h1 {
+  /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 70px;
+    margin: 50px;
+    color: rgb(255, 255, 255);
+  }
+
+  i a{
+  /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 70px;
+    margin: 50px;
+    color: rgb(255, 255, 255);
+  }
+
+  .info h3 {
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(80, 80, 80);
+    /* Position */
+    margin-top: 3px;
+    margin-left: 20%;
+  }
+
+  .info-header {
+    position: fixed;
+    top: 0px;
+  }
+
+  /* Register Area */
+  .socialclub-register-area {
+    /* Size */
+    width: 95%;
+    height: auto;
+    /* Style */
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    /* Position */
+    display: flex;
+    justify-content: flex-end;
+    /* Transition */
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  .division {
+    /* Style */
+    background-color: rgba(0, 0, 0, 0.822);
+    /* Size */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  /* Gallery */
+  .gallery-bar {
+    /* Size */
+    width: 100%;
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+
+  .gallery {
+    /* Size */
+    width: 95%;
+    /* Position */
+    margin-top: 10px;
+    margin-left: 0px;
+    float: left;
+    /* Remove selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  /* Card */
+  .card-bar {
+    /* Size */
+    width: 95%;
+    /* Position */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .card {
+    /* Size */
+    width: 100%;
+    /* Position */
+    margin-top: 20px;
+  }
+
+  .card img {
+    /* Size */
+    width: 100px;
+    height: 100px;
+    /* Style */
+    border-radius: 100%;
+  }
+
+  .base {
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .foot {
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/* Responsividade IPHONE 6, 6S, 7 e 8 */
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .bone {
+    /* Size */
+    width: 800px;
+    height: auto;
+    /* Position */
+    margin:  auto 12%;
+    /* Flex */
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  header {
+    /* Size */
+    width: 100%;
+    height: auto;
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+  }
+
+  h3 {
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin: 15px;
+  }
+
+  a {
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+  }
+
+  /* Article body */
+  .article-body {
+    /* Size */
+    width: 100%;
+    /* Position */
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .article-cont {
+    /* Size */
+    width: 100%;
+    /* Position */
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  
+
+  ul {
+    /* Position */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  li a {
+    /* Position */
+    display: inline;
+    text-decoration: none;
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    /* Remove selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  li a:hover {
+    border-bottom: 25px solid rgb(255, 255, 255);
+  }
+
+  li a.active {
+    border-bottom: 25px solid rgb(255, 255, 255);
+  }
+
+  /* Logo */
+  .logo {
+    /* Size */
+    width: 50%;
+    height: auto;
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    flex-direction: center;
+    background-color: black;
+    /* Remove selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .logo-img {
+    /* Size */
+    width: 100px;
+    height: 100px;
+    /* Transition */
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  /* Info */
+  .info {
+    /* Size */
+    width: 100%;
+    height: 75px;
+    /* Flex */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* Color */
+    background-color: white;
+    /* Remove selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* Transition */
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  h1 {
+  /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 70px;
+    margin: 50px;
+    color: rgb(255, 255, 255);
+  }
+
+  i a{
+  /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 70px;
+    margin: 50px;
+    color: rgb(255, 255, 255);
+  }
+
+  .info h3 {
+    /* Font Style */
+    font-family: "Teko", sans-serif;
+    font-size: 50px;
+    color: rgb(80, 80, 80);
+    /* Position */
+    margin-top: 3px;
+    margin-left: 20%;
+  }
+
+  .info-header {
+    position: fixed;
+    top: 0px;
+  }
+
+  /* Register Area */
+  .socialclub-register-area {
+    /* Size */
+    width: 95%;
+    height: auto;
+    /* Style */
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    /* Position */
+    display: flex;
+    justify-content: flex-end;
+    /* Transition */
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+
+  .division {
+    /* Style */
+    background-color: rgba(0, 0, 0, 0.822);
+    /* Size */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  /* Gallery */
+  .gallery-bar {
+  /* Size */
+  width: 100%;
+  /* Position */
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
+.gallery {
+  /* Size */
+  width: 300px;
+  height: 450px;
+  /* Position */
+  margin: 5px;
+  float: left;
+  /* Remove selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.gallery img {
+  /* Size */
+  width: 230px;
+  height: 230px;
+  border-radius: 2%;
+}
+
+.desc {
+  /* Position */
+  padding: 7px;
+  text-align: center;
+}
+
+.desc a{
+  /* Position */
+  font-size: 25px;
+  text-align: center;
+}
+
+  /* Card */
+  .card-bar {
+    /* Size */
+    width: 95%;
+    /* Position */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .card {
+    /* Size */
+    width: 100%;
+    /* Position */
+    margin-top: 20px;
+  }
+
+  .card img {
+    /* Size */
+    width: 100px;
+    height: 100px;
+    /* Style */
+    border-radius: 100%;
+  }
+
+  .base {
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .foot {
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+

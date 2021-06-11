@@ -1,0 +1,38 @@
+body {
+  /* Style */
+  background-color: #545454;
+}
+
+.logo {
+  /* Size */
+  width: 100%;
+  height: 340px;
+  /* Flex */
+  display: flex;
+  justify-content: center;
+  background-color: #545454;
+  /* Remove selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+li a {
+  /* Position */
+  display: inline;
+  text-decoration: none;
+  /* Font Style */
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  border-bottom: 3px solid #545454;
+  /* Remove selection */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.buy h4 {
+  /* Style */
+  color: #545454;
+}
